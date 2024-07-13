@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test
 
 class ValidAnagramTest {
     private val validAnagram: ValidAnagram = ValidAnagramHashMapImpl()
+    // private val validAnagram: ValidAnagram = ValidAnagramIntArrayImpl()
     // private val validAnagram: ValidAnagram = ValidAnagramStringBuilderImpl()
     // private val validAnagram: ValidAnagram = ValidAnagramArrayImpl()
 

@@ -58,23 +58,12 @@ class ValidAnagramHashMapImpl : ValidAnagram {
         val hashMap = HashMap<Char, Int>()
         for (char in s) {
             val currentValue = hashMap[char]
-            if (currentValue != null) {
-                hashMap[char] = currentValue + 1
-            } else {
-                hashMap[char] = 1
-            }
-        }
-        for (char in t) {
-            val currentValue = hashMap[char]
-            if (currentValue != null) {
-                if (currentValue == 1) {
-                    hashMap.remove(char)
+            if (t.contains(char).not())
+                if (currentValue != null) {
+                    hashMap[char] = currentValue + 1
                 } else {
-                    hashMap[char] = currentValue - 1
+                    hashMap[char] = 1
                 }
-            } else {
-                return false
-            }
         }
         if (hashMap.isEmpty()) return true
         return false
@@ -85,4 +74,22 @@ class ValidAnagramHashMapImpl : ValidAnagram {
  * best solution time: Using IntArray + unicode calculations
  *
  * best solution memory: Using IntArray + unicode calculations
+ *
+ * copied from leetcode
  */
+
+class ValidAnagramIntArrayImpl : ValidAnagram {
+    override fun isAnagram(s: String, t: String): Boolean {
+        if (s.length != t.length)
+            return false
+        val arr1 = IntArray(26)
+        val arr2 = IntArray(26)
+        for (i in 0..s.length - 1) {
+            arr1[s[i] - 'a']++
+            arr2[t[i] - 'a']++
+        }
+        if (!arr1.contentEquals(arr2))
+            return false
+        return true
+    }
+}
