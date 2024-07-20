@@ -1,5 +1,7 @@
 package org.example.easy
 
+import java.util.*
+
 /**
  * [Reverse String](https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/879/)
  * @see easy.ReverseStringTest
@@ -35,5 +37,23 @@ class ReverseStringWhileImpl : ReverseString {
 class ReverseStringKotlinReversedArrayImpl : ReverseString {
     override fun reverseString(s: CharArray): Unit {
         s.reverse()
+    }
+}
+
+/**
+ * 3
+ * duration: 222ms
+ * memory: 42mb
+ */
+class ReverseStringKotlinStackImpl : ReverseString {
+    override fun reverseString(s: CharArray): Unit {
+        val stack = Stack<Char>()
+        s.forEach {
+            stack.push(it)
+        }
+        s.forEachIndexed { index, _ ->
+            val item = stack.pop()
+            s[index] = item
+        }
     }
 }

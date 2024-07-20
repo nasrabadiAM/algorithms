@@ -1,12 +1,14 @@
 package easy
 
 import org.example.easy.ReverseStringKotlinReversedArrayImpl
+import org.example.easy.ReverseStringKotlinStackImpl
 import org.junit.jupiter.api.Test
 import kotlin.test.assertContentEquals
 
 class ReverseStringTest {
 
-    private val reverseString = ReverseStringKotlinReversedArrayImpl()
+    // private val reverseString = ReverseStringKotlinReversedArrayImpl()
+    private val reverseString = ReverseStringKotlinStackImpl()
     // private val reverseString = ReverseStringWhileImpl()
 
     @Test
