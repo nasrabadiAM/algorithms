@@ -2,7 +2,7 @@ package org.example.easy
 
 /**
  * [Valid Anagram](https://leetcode.com/explore/interview/card/top-interview-questions-easy/127/strings/882/)
- * @see easy.ValidAnagramTest.kt
+ * @see easy.ValidAnagramTest
  * */
 
 interface ValidAnagram {
