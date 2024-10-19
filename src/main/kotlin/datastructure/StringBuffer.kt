@@ -1,5 +1,16 @@
 package org.example.datastructure
 
+/**
+ * This is a simple implementation of [java.lang.StringBuffer],
+ * but it is not thread-safe.
+ *
+ * The other difference between my implementation and [java.lang.StringBuffer] is that
+ * [java.lang.StringBuffer] uses [java.lang.AbstractStringBuilder] class which uses byte[] as the underlying
+ * data type.
+ *
+ * The difference between [java.lang.StringBuffer] and [java.lang.StringBuilder] is that [java.lang.StringBuffer] is
+ * thread-safe, so it is slower that [java.lang.StringBuilder].
+ */
 class StringBuffer {
 
     var size = 8
