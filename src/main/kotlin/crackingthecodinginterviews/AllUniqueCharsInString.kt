@@ -28,7 +28,7 @@ class SolutionHashMap : AllUniqueCharsInString {
             }
         }
         var hasDuplicate = false
-        map.forEach { (key, value) ->
+        map.forEach { (_, value) ->
             if (value > 1) hasDuplicate = true
         }
         return hasDuplicate.not()
@@ -55,3 +55,8 @@ class SolutionNoDataStructure : AllUniqueCharsInString {
         return true
     }
 }
+
+/**
+ * Other solutions in book
+ *
+ */
