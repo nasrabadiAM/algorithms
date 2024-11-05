@@ -4,7 +4,7 @@
  * Implement a function void reverse(char* str) in c or c++ which reverses
  * a null-terminated string
  * time complexity: O(n)
- * implementation time: 1h 
+ * implementation time: 10 min 
  */
 
 class SolutionReverseStringInPlace {

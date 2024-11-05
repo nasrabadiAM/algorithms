@@ -9,4 +9,4 @@
 
 ## Cracking the coding interviews
 1. [All Unique char in string](./src/main/kotlin/crackingthecodinginterviews/AllUniqueCharsInString.kt)
-2. [All Unique char in string](./src/main/cpp/reverse_string/ReverseString.cpp)
+2. [Revrse a null-terminated string(c++)](./src/main/cpp/reverse_string/ReverseString.cpp)
