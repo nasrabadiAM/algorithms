@@ -58,6 +58,6 @@ class CharArraySolution : PermutationOfTwoString {
             charArray[char.code] = charArray[char.code] - 1
             if (charArray[char.code] < 0) return false
         }
-        return charArray.all { it == 0 }
+        return true
     }
 }

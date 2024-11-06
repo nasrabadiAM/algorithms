@@ -92,6 +92,14 @@ class PermutationOfTwoStringTest {
         solutionArray.assertFalse(first, second)
     }
 
+    @Test
+    fun shouldReturnFalseIfSecondStringHasADifferentChar() {
+        val first = "IHello"
+        val second = "Hellon"
+        solution.assertFalse(first, second)
+        solutionArray.assertFalse(first, second)
+    }
+
 
     private fun PermutationOfTwoString.assertFalse(first: String, second: String) {
         val result = this.isPermutation(first, second)
