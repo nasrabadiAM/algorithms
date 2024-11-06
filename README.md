@@ -9,7 +9,9 @@
 
 ## Cracking the coding interviews
 1. [All Unique char in string](./src/main/kotlin/crackingthecodinginterviews/AllUniqueCharsInString.kt)
-2. [Revrse a null-terminated string(c++)](./src/main/cpp/reverse_string/ReverseString.cpp)
+2. [Reverse a null-terminated string(c++)](./src/main/cpp/reverse_string/ReverseString.cpp)
+3. [Permutation of the other string](./src/main/kotlin/crackingthecodinginterviews/PermutationOfTwoString.kt)
+
 
 
 # Data structures
