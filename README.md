@@ -20,6 +20,7 @@
 7. [String Compression](./src/main/kotlin/crackingthecodinginterviews/StringCompression.kt)
 8. [Rotate Image(Java)](./src/main/java/crackingthecodinginterview/rotateimage/RotateImage.java)
 9. [Zero Matrix(Java)](./src/main/java/crackingthecodinginterview/zeromatrix/ZeroMatrix.java)
+10. [Find kth element to last of a linked list](./src/main/kotlin/crackingthecodinginterviews/FindKthElementToLastOfALinkedList.kt)
 
 # Data structures
 
