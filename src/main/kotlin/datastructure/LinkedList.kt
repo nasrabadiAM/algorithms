@@ -1,6 +1,6 @@
 package org.example.datastructure
 
-data class LinkedList<T>(val data: T) {
+data class LinkedList<T>(var data: T) {
     var next: LinkedList<T>? = null
 
     fun appendToTail(node: LinkedList<T>) {
